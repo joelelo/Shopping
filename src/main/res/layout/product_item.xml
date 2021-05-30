@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/prod_item">
+
+    <ImageView
+        android:id="@+id/prod_image"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:contentDescription="Product Image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.55"
+        app:srcCompat="@drawable/apple" />
+
+    <TextView
+        android:id="@+id/prod_name"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        android:background="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/prod_image"
+        app:layout_constraintStart_toStartOf="@+id/prod_image"
+        app:layout_constraintTop_toBottomOf="@+id/prod_image" />
+
+    <TextView
+        android:id="@+id/prod_price"
+        android:layout_width="0dp"
+        android:layout_height="20dp"
+        app:layout_constraintEnd_toEndOf="@+id/prod_name"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/prod_name"
+        app:layout_constraintTop_toBottomOf="@+id/prod_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
